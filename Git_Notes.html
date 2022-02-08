@@ -31,4 +31,8 @@ GIT commands:--
 10. .gitignore - used to hide files from viewers
                   There are some files containing sensitive info which we do not want to show on github 
                   so we put names of those files in .gitignore file which should be initially untracked.
-                  
+                  Untracked file will turn gray after puting in gitignore
+
+                  To ignore all untacked files with .txt extention write in .gitignore - *.txt
+                  To not put some file then use - !1.txt
+                  To make tracked file as untracked - git rm --cached 'FILENAME'
