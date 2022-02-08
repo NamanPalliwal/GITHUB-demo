@@ -1,0 +1,33 @@
+untracked -> Add(track & put file in staging area) -> Modified -> Add(put file in staging area) -> Commit -> Push
+
+GIT commands:--
+
+1. Intialize Git Repository -> git init
+
+2. Track all files -> git add .
+
+3. To Track specific file -> git add 'FILENAME'
+
+4. To commit the changes -> git commit -m "Discription of this commit"
+            - Always perform "git add ./'FILENAME'" before commit (Put file in staging area(A))
+
+5. To see list of commits - git log (to exit press q)
+
+6. To add author details in commit ->   a. git config --global user.name NamanPalliwal
+                              b. git config --global user.email palliwalnaman@gmail.com
+
+7. To know status of files -> git status
+
+8. Create new repo on GITHUB & link it to local git ->
+                        a. Create a repo on GITHUB
+                        b. git branch -M main
+                        c. git remote add origin 'link to that github repo.git (without '')'
+                        d. git push -u origin main
+
+9. Push changes from local git to GITHUB ->
+                        a. First commit on local with step 4
+                        b. git push
+
+10. .gitignore - used to hide files from viewers
+                  There are some files containing sensitive info which we do not want to show on github 
+                  so we put names of those files in .gitignore file which should be initially untracked.
